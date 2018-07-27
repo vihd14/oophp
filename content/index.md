@@ -1,21 +1,27 @@
 ---
-title: "My title"
+title: "Home - Viza"
 ...
 Min me-sida i kursen oophp
 =========================
 
-[FIGURE src="image/me.jpg?w=500" caption="Bild på mig"]
+[FIGURE src="image/me.jpg?w=300"]
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+**Varmt välkomna till min me-sida i kursen oophp!**
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+*Jahaja, dags för ännu en me-sida där man ska skriva en fin text om sig själv...*
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
+Jag heter Viktoria och kommer ursprungligen från Strömsholm som ligger ca 3 mil utanför Västerås. I Karlskrona har jag varit
+bosatt sedan hösten 2014 då jag började plugga till Civilingenjör inom spel- och programvaruteknik. Eftersom det inte passade
+mig bytte jag två år senare till Webbprogrammering som är mycket roligare!
 
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
+Jag brinner mest för front-end development och främst webbdesign. Jag försöker göra olika utseende på alla mina me-sidor för att
+ge lite spänning i vardagen och inte fastna i ett och samma mönster (bootstrap t.ex. ger mig mardrömmar...). Helst ska allt byggas från
+grunden med css så man verkligen känner att man gjort allting själv.
 
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
+När jag inte sitter och leker med hemsidor och pluggar ger jag mig gärna ut på promenader i vår vackra natur, hänger på studentpuben
+eller gymmar. Måla är också roligt ibland men det är i nuläget lite brist på inspiration så det har varit rätt segt de senaste
+åren men jag hoppas kunna komma igång med både det och fotografering inom kort!
 
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
+Det var allt jag tänkte skriva om mig och jag önskar er en fortsatt trevlig dag.
 
-Vi syns och hörs i forum och chatt!
+*/Viktoria*

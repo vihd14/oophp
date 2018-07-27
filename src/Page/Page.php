@@ -30,7 +30,7 @@ class Page implements /* PageRenderInterface, */ InjectionAwareInterface
         $view = $this->di->get("view");
 
         // Add static assets
-        $data["favicon"] = "favicon.ico";
+        $data["favicon"] = "img/logo.png";
         $data["stylesheets"] = ["css/style.css"];
         $data["javascripts"] = ["js/main.js"];
 

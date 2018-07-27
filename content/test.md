@@ -1,7 +1,7 @@
-Lek
+Testsida
 ===========================
 
-Här kan du länka till dina egna lek-sidor, inom eller utom din me-sida.
+Här kan du länka till dina egna test-sidor, inom eller utom din me-sida.
 
 Du kan skriva egna routes i filen <code>src/route/app.php</code>, där finns några routehanterare som du kan utgå ifrån.
 

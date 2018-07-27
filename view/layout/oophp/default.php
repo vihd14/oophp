@@ -22,10 +22,24 @@ namespace Anax\View;
 
 <?php foreach ($stylesheets as $stylesheet) : ?>
     <link rel="stylesheet" type="text/css" href="<?= asset($stylesheet) ?>">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <?php endforeach; ?>
 
 </head>
 <body>
+
+    <!-- navbar -->
+    <?php if (regionHasContent("navbar")) : ?>
+    <div class="outer-wrap outer-wrap-navbar">
+        <div class="inner-wrap inner-wrap-navbar">
+            <div class="row">
+                <div class="wrap-navbar">
+                    <?php renderRegion("navbar") ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php endif; ?>
 
 <!-- header -->
 <?php if (regionHasContent("header")) : ?>
@@ -34,19 +48,6 @@ namespace Anax\View;
         <div class="row">
             <div class="wrap-header">
                 <?php renderRegion("header") ?>
-            </div>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
-
-<!-- navbar -->
-<?php if (regionHasContent("navbar")) : ?>
-<div class="outer-wrap outer-wrap-navbar">
-    <div class="inner-wrap inner-wrap-navbar">
-        <div class="row">
-            <div class="wrap-navbar">
-                <?php renderRegion("navbar") ?>
             </div>
         </div>
     </div>

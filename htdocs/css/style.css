@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One');
+
 /**
  * General setup for layout.
  */
@@ -10,6 +12,12 @@ body {
     margin: 0;
     background-color: #fff;
     word-wrap: break-word;
+    font-family: "Open Sans";
+}
+
+h1,
+h2 {
+    font-family: "Poiret One";
 }
 
 .outer-wrap {
@@ -19,8 +27,28 @@ body {
 
 .inner-wrap {
     margin: 0 auto;
-    max-width: 680px;
-    padding: 0 0.5em;
+    max-width: 90%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    transition: 0.5s;
+    color: #b57d86;
+}
+
+a:link {
+    color: #b57d86;
+}
+
+a:visited {
+    color: #b57d86;
+}
+
+a:hover {
+    color: #cca39d;
 }
 
 
@@ -30,23 +58,10 @@ body {
  */
 .outer-wrap-header {
     max-width: 100%;
-    min-height: 2em;
-    background-color: #000;
-    color: #fff;
-}
-
-.outer-wrap-header {
-    position: relative;
 }
 
 .inner-wrap-header {
     max-width: 100%;
-}
-
-.header-logo {
-    position: absolute;
-    top: 7em;
-    left: 1em;
 }
 
 
@@ -55,19 +70,48 @@ body {
  * Navbar
  */
 .outer-wrap-navbar {
-    max-width: 100%;
-    min-height: 2em;
+    width: 100%;
     background-color: #535353;
     color: #fff;
-    padding: 0.5em 0;
+    position: fixed;
+    opacity: 0.9;
 }
 
 .outer-wrap-navbar a {
     color: #fff;
+    padding: 0 0.5em;
+    text-decoration: none;
+}
+
+.outer-wrap-navbar a:visited {
+    color: #fff;
 }
 
 .outer-wrap-navbar a:hover {
-    color: #ddd;
+    color: #cca39d;
+}
+
+.outer-wrap-navbar a:active {
+    color: #b57d86;
+}
+
+.inner-wrap-navbar {
+    max-width: 100%;
+    padding: 0 1em;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar img {
+    padding-right: 3em;
+}
+
+.navbar a {
+    text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 
@@ -76,7 +120,6 @@ body {
  * Main
  */
 .outer-wrap-main {
-    min-height: 20em;
     margin-bottom: 2em;
 }
 
@@ -88,6 +131,15 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
+blockquote {
+    font-style: italic;
+    color: grey;
+}
+
+.figure {
+    float: right;
+    clear: both;
+}
 
 
 /**
@@ -95,10 +147,47 @@ body {
  */
 .outer-wrap-footer {
     max-width: 100%;
-    min-height: 10em;
-    background-color: #424242;
+    background-color: #4f2f34;
     color: #fff;
-    padding: 1em 0;
+    padding-bottom: 1.5em;
+}
+
+.wrap-footer {
+    display: flex;
+    text-align: center;
+}
+
+.footer-element {
+    width: 25%;
+}
+
+.footer-element h3 {
+    font-family: "Poiret One";
+}
+
+.footer-element p {
+    color: white;
+    padding-bottom: 0.5em;
+}
+
+.footer-element a:link {
+    color: white;
+}
+
+.footer-element a:visited {
+    color: white;
+}
+
+.footer-element a:hover {
+    color: #b57d86;
+}
+
+.footer-element i {
+    font-size: 2em;
+}
+
+.signatur {
+    margin: auto;
 }
 
 
