@@ -1,0 +1,43 @@
+body {
+    margin-top: 3em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+a {
+    font-size: 20px;
+    color: maroon;
+}
+
+a:visited {
+    color: maroon;
+}
+
+a:hover {
+    color: indianred;
+}
+
+.correct {
+    font-size: 30px;
+    color: red;
+}
+
+div.hint {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    width: 12.5em;
+    overflow: hidden;
+}
+
+div.hint:hover {
+    text-overflow: inherit;
+    overflow: visible;
+}
+
+.reset-button {
+    padding: 1em;
+}

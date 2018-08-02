@@ -17,29 +17,29 @@ namespace Anax\View;
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <?php if (isset($favicon)) : ?>
-    <link rel="icon" href="<?= $favicon ?>">
+    <link rel="icon" href="<?= asset("img/logo.png") ?>">
 <?php endif; ?>
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <?php foreach ($stylesheets as $stylesheet) : ?>
     <link rel="stylesheet" type="text/css" href="<?= asset($stylesheet) ?>">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <?php endforeach; ?>
 
 </head>
 <body>
 
-    <!-- navbar -->
-    <?php if (regionHasContent("navbar")) : ?>
-    <div class="outer-wrap outer-wrap-navbar">
-        <div class="inner-wrap inner-wrap-navbar">
-            <div class="row">
-                <div class="wrap-navbar">
-                    <?php renderRegion("navbar") ?>
-                </div>
+<!-- navbar -->
+<?php if (regionHasContent("navbar")) : ?>
+<div class="outer-wrap outer-wrap-navbar">
+    <div class="inner-wrap inner-wrap-navbar">
+        <div class="row">
+            <div class="wrap-navbar">
+                <?php renderRegion("navbar") ?>
             </div>
         </div>
     </div>
-    <?php endif; ?>
+</div>
+<?php endif; ?>
 
 <!-- header -->
 <?php if (regionHasContent("header")) : ?>

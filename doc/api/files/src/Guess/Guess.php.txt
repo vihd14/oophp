@@ -1,0 +1,81 @@
+<?php
+
+namespace Vihd14\Guess;
+
+/**
+ * A class for guessing the number.
+ */
+
+class Guess
+{
+    private $number;
+    private $tries;
+
+    /**
+     * Constructor to initiate the object with current game settings,
+     * if available. Randomize the current number if no value is sent in.
+     * Here a new game is initiated.
+     *
+     * @param int $inputNumber If a number is set on input, else randomize and add to
+     *                         variable $number (which is the secret number).
+     * @param int $tries  Number of tries a guess has been made,
+     *                    default 6.
+     */
+    public function __construct($inputNumber = "random", $tries = 0)
+    {
+        if ($inputNumber == "random") {
+            $this->number = rand(1, 100);
+        } else {
+            $this->number = $inputNumber;
+        }
+
+        $this->tries = $tries;
+    }
+
+    /**
+     * Get the correct secret number.
+     *
+     * @return int as the secret number.
+     */
+    public function getNumber()
+    {
+        return $this->number;
+    }
+
+    /**
+     * Get the number of tries that's been made.
+     */
+    public function getGuesses()
+    {
+        return $this->tries;
+    }
+
+    /**
+     * Method for guessing a number.
+     *
+     * @throws GuessException if guessed number is out of bounds.
+     *
+     * @return string to show the status of the guess that was made.
+     */
+    public function guessNumber($guessedNr)
+    {
+        if ($guessedNr < 1 || $guessedNr > 100) {
+            ?><!doctype html>
+            <a href="index.php">Back to startpage</a><br><br><?php
+            throw new GuessException("Out of bounds.");
+        }
+
+        if ($this->tries < 7) {
+            if ($guessedNr < $this->number) {
+                echo "<h3>The guess <u>".$guessedNr."</u> is <b>too low</b>.</h3>";
+            } elseif ($guessedNr > $this->number) {
+                echo "<h3>The guess <u>".$guessedNr."</u> is <b>too high</b>.</h3>";
+            } elseif ($guessedNr == $this->number) {
+                echo "<h3 class='correct'>Correct! I was thinking of the number <u>".$this->number."</u>.</h3>";
+            }
+        } else {
+            echo "<h3>You have guessed 6 times, I was thinking of the number <u>".$this->number."</u>. Press 'reset' to start a new game.</h3>";
+        }
+    }
+}
+

@@ -141,6 +141,22 @@ blockquote {
     clear: both;
 }
 
+/**
+ * For guess the number
+ */
+.hint {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    width: 12em;
+    overflow: hidden;
+}
+
+.hint:hover {
+    text-overflow: inherit;
+    overflow: visible;
+}
+
 
 /**
  * Footer

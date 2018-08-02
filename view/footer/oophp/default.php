@@ -11,7 +11,7 @@ namespace Anax\View;
 
 ?>
 <div class="footer-element signatur">
-    <img src="img/signatur.png" alt="Signatur">
+    <img src="<?= asset("img/signatur.png") ?>" alt="Signatur">
 </div>
 <div class="footer-element">
     <h3>Socialt</h3>
