@@ -2,8 +2,9 @@
 namespace Anax\View;
 
 use \Vihd14\Guess\Guess;
+use \Vihd14\Guess\Session;
 
-$session = new \Vihd14\Guess\Session();
+$session = new Session();
 
 /**
  * Template file to render a view.
