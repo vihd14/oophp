@@ -85,8 +85,8 @@ if (isset($_SESSION["start"])) {
         }
     }
 
-    ?><div class="player"><?php
-    if (isset($_SESSION["roll"])) {
+    ?><div class="player">
+    <?php if (isset($_SESSION["roll"])) {
         $playerTurnPoints = $_POST["playerTurnPoints"];
         echo "<br>Du slog: ";
         $game->playerRoll();
@@ -97,8 +97,8 @@ if (isset($_SESSION["start"])) {
             ?><form method="POST">
                 <?php unset($_SESSION["roll"]); ?>
                 <input type="submit" name="computerRoll" value="Kasta datorns tärningar">
-            </form><?php
-        } else {
+            </form>
+        <?php } else {
             ?>
             <form method="POST">
                 <br>
@@ -106,13 +106,12 @@ if (isset($_SESSION["start"])) {
                 <input type="submit" name="roll" value="Kasta igen">
                 <input type="submit" name="save" value="Spara poäng">
             </form>
-            <?php
-        }
+        <?php }
 
         echo "<br><b>Din poäng för rundan: ", $playerTurnPoints . "</b>";
-    }?></div><?php
+    }?></div>
 
-    if (isset($_POST["save"]) || isset($_SESSION["computerRoll"])) {
+    <?php if (isset($_POST["save"]) || isset($_SESSION["computerRoll"])) {
         if ($this->di->get("session")->get("computerPoints") < 100) {
             if ($this->di->get("session")->get("playerPoints") < 100) {
                 ?><div class="computer"><?php
@@ -130,8 +129,8 @@ if (isset($_SESSION["start"])) {
     }
 }
 ?></div>
-<div class="winner"><?php
-if ($this->di->get("session")->get("computerPoints") >= 100) {
+<div class="winner">
+<?php if ($this->di->get("session")->get("computerPoints") >= 100) {
     unset($_SESSION["roll"]);
     unset($_SESSION["computerRoll"]);
     ?>

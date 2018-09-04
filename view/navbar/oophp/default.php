@@ -28,9 +28,9 @@ class CNavigation
     public static function generateMenu($items, $class)
     {
         $html = "<nav class='$class'>\n";
-        ?><a href="<?= url("") ?>"><img src="<?= asset("img/logo.png") ?>" alt="Logo"></a><?php
+        ?><a href="<?= url("") ?>"><img src="<?= asset("img/logo.png") ?>" alt="Logo"></a>
 
-        foreach ($items as $key => $item) {
+        <?php foreach ($items as $key => $item) {
             $basename = str_replace(".php", "", basename($_SERVER['REQUEST_URI']));
             $selected = ($basename == $key)
             ? 'selected'

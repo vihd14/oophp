@@ -74,7 +74,8 @@ class Guess
                 echo "<h3 class='correct'>Correct! I was thinking of the number <u>".$this->number."</u>.</h3>";
             }
         } else {
-            echo "<h3>You have guessed 6 times, I was thinking of the number <u>".$this->number."</u>. Press 'reset' to start a new game.</h3>";
+            echo "<h3>You have guessed 6 times, I was thinking of the number <u>".$this->number.
+            "</u>. Press 'reset' to start a new game.</h3>";
         }
     }
 }
