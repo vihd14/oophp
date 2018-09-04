@@ -73,8 +73,36 @@ och det var en lättnad när man äntligen hade ett fungerande spel.
 Kmom03 {#kmom03}
 -------------------------
 
-Här är redovisningstexten
+### Har du tidigare erfarenheter av att skriva kod som testar annan kod?
+Ja jag har läst kursen Ramverk1 innan jag började beta av denna kurs och där skrev vi enhetstester med phpunit. Jag har även skrivit
+lite tester i Java med IntelliJ.
 
+### Hur ser du på begreppen enhetstestning och att skriva testbar kod?
+Det är bra att checka så att ens funktioner fungerar som man tänkt och inte genererar fel grejer. Enhetstestning gör även
+att man tänker efter lite extra hur man skriver den kod som ska testas, så att den är just testbar. Om en klass ej är
+testbar bör man fundera och kika igenom sin kod om den verkligen är bra skriven. Klasser bör vara möjliga att enhetstestas
+och en 100% kodtäckning är att föredra, i den mån det går.
+
+### Förklara kort begreppen white/grey/black box testing samt positiva och negativa tester, med dina egna ord.
+**White box:** Denna typ av testning använde vi främst i detta kursmoment: där man har tillgång till källkoden och kan testa varje
+liten del av sagd kod. Det är med hjälp av white box testing man mäter kodtäckning.
+
+**Black box:** Motsatsen till white box är black box testing, där man ej har tillgång till källkoden och i stället testar
+programmets system och funktionalitet.
+
+**Grey box:** Blandingen mellan white- och black box testing kallas grey box testing, där man främst letar efter defekter i programmet,
+såsom funktionalitet och kodtäckningsgrad.
+
+**Positiva och negativa tester:** Positiva tester görs för att visa att funktionen (t.ex.) gör vad som förväntas av den och negativa
+tester testar ifall koden hanterar felaktig input på rätt sätt och kastar exceptions.
+
+### Hur gick det att genomföra uppgifterna med enhetstester, använde du egna klasser som bas för din testning?
+Det gick enkelt då det inte var något direkt nytt för mig. Jag använde inte mina egna klasser utan nöjde mig med den som fanns
+tillgänglig i exemplet. Den var ändå rätt lik min egen Guess-klass i funktionaliteten så det fick duga! Kul att kunna nå upp
+till 100% kodtäckning. Det ser så trevligt ut när allt är grönt.
+
+### Vilken är din TIL för detta kmom?
+100% kodtäckning är väldigt tillfredställande och är något jag ska sträva efter i kommande moment.
 
 
 Kmom04 {#kmom04}
