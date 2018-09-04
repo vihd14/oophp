@@ -9,7 +9,7 @@
 /**
  * Guess my number.
  */
-$app->router->get("gissa/session", function () use ($app) {
+$app->router->any(["GET", "POST"], "gissa/session", function () use ($app) {
     $data = [
         "title" => "Gissa numret (SESSION) - Viza"
     ];

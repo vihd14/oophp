@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One');
 
 /**
- * General setup for layout.
- */
+* General setup for layout.
+*/
 html {
     overflow-y: scroll;
     background-color: #424242;
@@ -54,8 +54,8 @@ a:hover {
 
 
 /**
- * Header
- */
+* Header
+*/
 .outer-wrap-header {
     max-width: 100%;
 }
@@ -67,8 +67,28 @@ a:hover {
 
 
 /**
- * Navbar
- */
+* Navbar
+*/
+
+/**
+*Responsive navbar
+*/
+.rm-default.rm-desktop .selected,
+.rm-default.rm-desktop .selected-parent,
+.rm-default.rm-desktop .selected.selected-parent {
+    color: #cca39d;
+}
+
+.rm-default.rm-mobile .selected,
+.rm-default.rm-mobile .selected-parent,
+.rm-default.rm-mobile .selected.selected-parent,
+.rm-default.rm-mobile.rm-clicked .selected,
+.rm-default.rm-mobile.rm-clicked .selected-parent,
+.rm-default.rm-mobile.rm-clicked .selected.selected-parent {
+    background-color: #333;
+}
+
+
 .outer-wrap-navbar {
     width: 100%;
     background-color: #535353;
@@ -88,16 +108,20 @@ a:hover {
 }
 
 .outer-wrap-navbar a:hover {
-    color: #cca39d;
+    color: #b57d86;
 }
 
 .outer-wrap-navbar a:active {
-    color: #b57d86;
+    color: #cca39d;
 }
 
 .inner-wrap-navbar {
     max-width: 100%;
     padding: 0 1em;
+}
+
+.wrap-navbar {
+    display: flex;
 }
 
 .navbar {
@@ -117,8 +141,8 @@ a:hover {
 
 
 /**
- * Main
- */
+* Main
+*/
 .outer-wrap-main {
     margin-bottom: 2em;
 }
@@ -142,8 +166,8 @@ blockquote {
 }
 
 /**
- * For guess the number
- */
+* For guess the number
+*/
 .hint {
     position: relative;
     display: inline-block;
@@ -157,10 +181,104 @@ blockquote {
     overflow: visible;
 }
 
+/**
+* For dice game.
+* CSS sprite for a dice with six faces.
+*/
+.dice-sprite {
+    display: inline-block;
+    padding: 0;
+    margin: 0 4px 0 0;
+    width: 32px;
+    height: 32px;
+    background: url("../img/dice-faces.jpg") no-repeat;
+}
+
+.dice-sprite.dice-1 { background-position: -160px 0; }
+.dice-sprite.dice-2 { background-position: -128px 0; }
+.dice-sprite.dice-3 { background-position: -96px 0; }
+.dice-sprite.dice-4 { background-position: -64px 0; }
+.dice-sprite.dice-5 { background-position: -32px 0; }
+.dice-sprite.dice-6 { background-position: 0 0; }
+
+code {
+    font-size: 130%;
+    background-color: #f1f1f1;
+}
+
+input {
+    font-family: "Open Sans";
+}
+
+div.dice-container {
+    display: flex;
+    justify-content: left;
+}
+
+div.player {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+div.computer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+div.winner {
+    font-weight: bold;
+    flex-direction: row;
+    width: 100%;
+}
+
+.winner h2 {
+    font-family: "Open Sans";
+    border-bottom: none;
+}
+
+.reset:link {
+    font-size: 80%;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    color: #fff;
+    background-color: darkred;
+    border: 2px solid darkred;
+}
+
+.reset:visited {
+    color: #fff;
+    background-color: darkred;
+    border: 2px solid darkred;
+}
+
+.reset:hover {
+    color: darkred;
+    background-color: #fff;
+    border: 2px solid darkred;
+}
+
+input[type=submit] {
+    padding: 0.5em 1em;
+    transition: 0.5s;
+    color: #fff;
+    background-color: #063;
+    border: 2px solid #063;
+}
+
+input[type=submit]:hover {
+    color: #063;
+    background-color: #fff;
+    border: 2px solid #063;
+    cursor: pointer;
+}
+
+
 
 /**
- * Footer
- */
+* Footer
+*/
 .outer-wrap-footer {
     max-width: 100%;
     background-color: #4f2f34;
@@ -209,8 +327,8 @@ blockquote {
 
 
 /**
- * Responsive
- */
+* Responsive
+*/
 @media screen and (max-width: 970px) {
     .header-logo {
         display: none;
